@@ -418,13 +418,4 @@ button:hover {
 .social>ul>li:hover a{
   color: #ffffff;
 }
-.Ellipse_1 {
-  border-radius: 50%;
-  background-color: rgb(57, 73, 171);
-  position: absolute;
-  left: 668px;
-  top: 6569px;
-  width: 15px;
-  height: 15px;
-  z-index: 401;
-}
+
