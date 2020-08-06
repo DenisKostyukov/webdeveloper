@@ -5,6 +5,7 @@ html{
 font-size: 10px;
 }
 body{
+  width: 100%;
   font-family: 'Open Sans',sans-serif;
   font-weight: 400;
   margin: 0;
@@ -115,6 +116,7 @@ body{
   align-items:center;
 }
 .topic-text{
+  padding:6rem 0 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,10 +228,9 @@ body{
   
 }
 .button-panel{
-  margin: 5rem;
+  padding-bottom: 4rem;
 }
 .button-panel>button{
-  margin-left: 1rem;
   font-size: 2rem;
   font-weight: 500;
   padding: 1rem 1.6rem 1rem 2.3rem;
@@ -329,7 +330,7 @@ body{
 button {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  margin: 50px 10px 0 0;
+  margin: 0 10px 0 0;
   border: 2px solid rgb(0, 137, 123);
   font-size: 2.0rem;
   color: #000000;
@@ -418,4 +419,50 @@ button:hover {
 .social>ul>li:hover a{
   color: #ffffff;
 }
-
+.blog{
+  padding-top:4rem;
+  padding-bottom:4rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background-color: #e4fdf9;
+}
+.bblog{
+  width: 85%;
+  display: flex;
+  justify-content:start;
+}
+.blog-text{
+  margin: 2rem  0 0 2rem;
+}
+.blog-text>span>.far{
+  margin-right: .5rem;
+}
+.blog-text>span{
+  margin-right: 1rem;
+}
+.blog-text>h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.blog-text>span{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.blog-text>p{
+  width: 85%;
+  font-size: 1.5rem;
+}
+.bblog-right {
+  width: 85%;
+  display: flex;
+  justify-content: start;
+}
+.bblog-right>.blog-text{
+  order: -1;
+  margin: 2rem 0 0 0;
+}
+.blog>button{
+  margin: 5rem 0 3rem 0;
+}
