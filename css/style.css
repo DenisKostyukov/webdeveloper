@@ -18,7 +18,7 @@ body{
   justify-content: space-between;
   align-items: center;
   min-height: 600px;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   
 }
@@ -26,18 +26,19 @@ body{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
 }
 .menu{
   z-index: 999;
-  width: 60%;
+  width: 70%;
   margin-top: 20px;
 }
 .menu ul {
+  padding: 0;
   text-decoration: none;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .menu-link{
   font-size: 2rem;
@@ -55,7 +56,7 @@ body{
   z-index: 0;
   left: 0;
   top: 0;
-  opacity: .7;
+  opacity: .8;
   position: absolute;
   background-color: rgb(0, 0, 0);
   width: 100%;
@@ -65,6 +66,7 @@ body{
   display: flex;
   flex-direction: column;
   z-index: 4;
+  padding-top: 50px;
   justify-content: center;
   text-align: center;
   font-size: 2.2rem;
@@ -109,14 +111,15 @@ body{
   color: #000000;
 }
 .about{
-  padding: 4rem;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
 }
 .topic-text{
-  padding:6rem 0 6rem 0;
+  z-index: 9999;
+  padding:60px 0 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,7 +136,7 @@ body{
 }
 .about-cards{
   width: 90%;
-  padding: 2rem;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -157,8 +160,8 @@ body{
 .services {
   
   background-color: #e4fdf9;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,17 +171,16 @@ body{
 .service-cards {
   width: 90%;
   flex-wrap: wrap;
-  padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .service-card{
   transition: .6;
   width: 30%;
-  margin: 1rem;
-  padding-bottom: 2rem;
-  padding-top: 5rem;
+  margin: 10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   background-color:white;
   display: flex;
   flex-direction: column;
@@ -198,8 +200,9 @@ body{
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .service-card>button{
-  padding: .5rem;
-  font-size: 2rem;
+  margin-top: 40px;
+  padding: 5px;
+  font-size: 20px;
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid rgb(33, 33, 33);
@@ -220,7 +223,7 @@ body{
   border-color: #ffffff;
 }
 .latest-works{
-  padding: 4rem;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,7 +236,7 @@ body{
 .button-panel>button{
   font-size: 2rem;
   font-weight: 500;
-  padding: 1rem 1.6rem 1rem 2.3rem;
+  padding: 10px 16px 10px 23px;
   text-transform: uppercase;
   border: 2px solid rgb(0, 137, 123);
   background: transparent;
@@ -249,18 +252,18 @@ body{
   flex-wrap: wrap;
   align-items:center;
 }
-.work>img{
+.works>img{
   background: #000000;
-  margin-bottom: 1rem;
-  width: 35rem;
-  height: 25rem;
+  margin-bottom: 10px;
+  width: 30%;
+  height: 200px;
 }
 .latest-works>button {
   border: 2px solid rgb(0, 137, 123);
 }
 .pricing-plan{
-  padding-top:4rem ;
-  padding-bottom:4rem;
+  padding-top:40px ;
+  padding-bottom:40px;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -276,8 +279,8 @@ body{
   text-align: center;
 }
 .plan{
-  margin: 2rem;
-  width: 30rem;
+  margin: 20px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -286,12 +289,12 @@ body{
   margin: 0;
   background:url(../img/plan-bg.png) no-repeat center;
   background-size: cover;
-  height: 17rem;
+  height: 170px;
   width: 100%;
   
 }
 .promo-text> h2{
-  margin-top: 2rem;
+  margin-top: 20px;
   margin-bottom: 0;
   font-weight: 400;
   color: #ffffff;
@@ -311,7 +314,7 @@ body{
   font-size: 1.7rem;
 }
 .description{
-  padding-bottom: 4rem;
+  padding-bottom: 40px;
 }
 .description>p{
   font-size: 1.7rem;
@@ -352,8 +355,8 @@ button:hover {
   border: 2px solid #000000;
 }
 .our-team{
-  padding-top:4rem;
-  padding-bottom:4rem;
+  padding-top:40px;
+  padding-bottom:40px;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -420,8 +423,9 @@ button:hover {
   color: #ffffff;
 }
 .blog{
-  padding-top:4rem;
-  padding-bottom:4rem;
+  background-color: #e4fdf9;
+  padding-top:40px;
+  padding-bottom:40px;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -433,14 +437,20 @@ button:hover {
   display: flex;
   justify-content:start;
 }
+.bblog>img{
+  width: 50%;
+}
+.bblog-right>img {
+  width: 50%;
+}
 .blog-text{
-  margin: 2rem  0 0 2rem;
+  margin: 20px  0 0 20px;
 }
 .blog-text>span>.far{
-  margin-right: .5rem;
+  margin-right: 5px;
 }
 .blog-text>span{
-  margin-right: 1rem;
+  margin-right: 1opx;
 }
 .blog-text>h2{
   font-size: 2.5rem;
@@ -461,8 +471,110 @@ button:hover {
 }
 .bblog-right>.blog-text{
   order: -1;
-  margin: 2rem 0 0 0;
+  margin: 20px 0 0 0;
 }
 .blog>button{
+  background-color: #00897b;
   margin: 5rem 0 3rem 0;
+}
+.contact{
+  width: 100%;
+  background: url(../img/block-contact.jpg) no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact>.topic-text{
+  color: #ffffff;
+}
+.communication{
+  width: 85%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.method-com {
+  width: 33%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3949ab;
+}
+.method-com>p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  width: 63%;
+}
+form{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+}
+.user-data{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.user-data>input{
+  width: 100%;
+}
+input{
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+}
+.comment{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment>textarea {
+  margin: 0 auto;
+  width: 100%;
+  resize: none;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+}
+.feedback-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.feedback-btn>input{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+}
+footer>p{
+  font-family: 'Roboto',
+  sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
 }
