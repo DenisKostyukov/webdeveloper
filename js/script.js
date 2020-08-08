@@ -1,3 +1,4 @@
+
   $(".service-card").hover(
         function () {
     $(this).find('img').attr('src', 'img/smartphone2.png');

@@ -1,0 +1,23 @@
+@media (max-width:768px){
+  html{
+    font-size: 8px;
+  }
+  .visible-lg{
+    display: none;
+  }
+  .m-menu-link{
+    display: block;
+  }
+  .service-card{
+    width: 45%;
+  }
+  .works>img{
+    width: 45%;
+  }
+  .main-text{
+    width: 90%;
+  }
+  .plan>button{
+  width: 80%;
+  }
+}

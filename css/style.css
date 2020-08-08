@@ -11,6 +11,7 @@ body{
   margin: 0;
 }
 .main{
+  
   background: url(../img/main-bg.jpg)no-repeat center;
   background-size:cover;
   display: flex;
@@ -26,12 +27,46 @@ body{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
 }
 .menu{
-  z-index: 999;
-  width: 70%;
+ width: 80%;
   margin-top: 20px;
+}
+.m-menu-link{
+  display: none;
+  margin-top: 20px;
+  display: none;
+  font-size: 3rem;
+  color: #000000;
+}
+.m-menu{
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  font-size: 3rem;
+  line-height: 4rem;
+  background: #fff;
+  
+  z-index: 99999;
+  transition: 0.2s;
+  transform: translateX(100%);
+}
+.m-menu__active{
+  transform: translateX(0%);
+}
+.close-menu{
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
+  font-size: 5rem;
+  font-weight: 900;
 }
 .menu ul {
   padding: 0;
@@ -40,6 +75,7 @@ body{
   display: flex;
   justify-content: space-around;
 }
+
 .menu-link{
   font-size: 2rem;
   font-weight: 500;
@@ -101,7 +137,7 @@ body{
   transition: .5;
 }
 .main-arrow{
-  z-index: 999;
+  z-index: 9;
   margin-bottom: 75px;
   text-align: center;
 }
@@ -118,7 +154,7 @@ body{
   align-items:center;
 }
 .topic-text{
-  z-index: 9999;
+  z-index: 9;
   padding:60px 0 60px 0;
   display: flex;
   flex-direction: column;
@@ -136,13 +172,12 @@ body{
 }
 .about-cards{
   width: 90%;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 .card{
-  
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -223,12 +258,12 @@ body{
   border-color: #ffffff;
 }
 .latest-works{
-  padding: 40px;
+  padding: 40px 0 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 .button-panel{
   padding-bottom: 4rem;
@@ -255,8 +290,8 @@ body{
 .works>img{
   background: #000000;
   margin-bottom: 10px;
-  width: 30%;
-  height: 200px;
+  width: 32%;
+  height: 80%;
 }
 .latest-works>button {
   border: 2px solid rgb(0, 137, 123);
@@ -272,15 +307,13 @@ body{
 }
 .plans{
   width: 90%;
-  
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
   text-align: center;
 }
 .plan{
-  margin: 20px;
-  width: 300px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -331,6 +364,7 @@ body{
   width: 50%;
 }
 button {
+  
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   margin: 0 10px 0 0;
@@ -363,9 +397,9 @@ button:hover {
   flex-direction: column;
 }
 .team{
-  width: 85%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items:stretch;
 }
@@ -433,7 +467,7 @@ button:hover {
   background-color: #e4fdf9;
 }
 .bblog{
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content:start;
 }

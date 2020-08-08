@@ -9,6 +9,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src = "js/script.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -20,7 +21,20 @@
     <div class="logo">
       <p>Your Logo</p>
     </div>
-    <div class="menu">
+    <a href="#" class="m-menu-link">
+      <i class="fas fa-bars"></i>
+    </a>
+    <ul class="m-menu">
+      <li class="close-menu">&times</li>
+      <li><a href="#" class="menu-link">Home</a></li>
+      <li><a href="#" class="menu-link">About</a></li>
+      <li><a href="#" class="menu-link">Servicing</a></li>
+      <li><a href="#" class="menu-link">Portfolio</a></li>
+      <li><a href="#" class="menu-link">Blog</a></li>
+      <li><a href="#" class="menu-link">Contact us</a></li>
+      <li><a href="#" class="menu-link"><i class="fas fa-search"></i></a></li>
+    </ul>
+    <div class="menu visible-lg">
       <ul>
         <li><a href="#" class="menu-link">Home</a></li>
         <li><a href="#" class="menu-link">About</a></li>
@@ -343,5 +357,20 @@
     <footer>
       <p>All rights Reserved © 2020</p>
     </footer>
+    <script>
+      $(function() {
+            var link=$('.m-menu-link');
+            var close=$('.close-menu');
+            var menu=$('.m-menu');
+            link.on('click', function(event) {
+                event.preventDefault();
+                menu.toggleClass('m-menu__active');
+            });
+            close.on('click', function (event) {
+                event.preventDefault();
+                menu.toggleClass('m-menu__active');
+            });
+        }); 
+    </script>
   </body>
 </html>
