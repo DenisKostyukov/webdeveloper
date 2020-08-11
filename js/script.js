@@ -19,5 +19,8 @@
          menu.toggleClass('m-menu__active');
      });
  });
+ $('.works-slider').slick({
+     
+ });
         
         

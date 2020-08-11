@@ -17,7 +17,45 @@
   .main-text{
     width: 90%;
   }
-  .plan>button{
-  width: 80%;
+  .social>ul>li{
+    width: 50px;
+    height: 35px;
   }
+  .method-com>p{
+    width: 70%;
+  }
+}
+@media (max-width:600px) {
+  .button-panel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button{
+    margin: 0;
+  }
+  .plan>button{
+    padding: 15px 15px 15px 15px;
+  }
+  .method-com>p {
+    width: 100%;
+  }
+}
+@media (max-width:480px){
+.works {
+  display: none;
+}
+
+.works>img {
+  display: none;
+}
+
+.works-slider {
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+
+}
 }
