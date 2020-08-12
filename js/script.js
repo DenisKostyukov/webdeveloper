@@ -20,7 +20,30 @@
      });
  });
  $('.works-slider').slick({
-     
+     dots: true,
  });
+$('.service-cards').slick({
+    dots:true,
+    slidesToShow:3,
+    centerMode: true,
+    centerPadding: '30px',
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 2,
+                centerPadding: '20px',
+            }
+        },
+        {
+            breakpoint: 482,
+            settings: {
+                slidesToShow: 1,
+                centerMode: false,
+                arrows:false,
+            }
+        },
+    ]
+});
         
         
